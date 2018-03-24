@@ -48,7 +48,7 @@ public class Control {
 			} else if ("sftp".equals(transfertype) || "SFTP".equals(transfertype)) {
 
 				SFTPTool instance = new SFTPTool();
-				instance.getLogger().addHandler(new FileHandler("ftpLog.txt"));
+				instance.getLogger().addHandler(new FileHandler("ftpLog.log"));
 
 				// sftp secretKey login
 				if (password.indexOf("-") != -1) {
